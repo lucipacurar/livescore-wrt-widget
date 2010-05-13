@@ -7,7 +7,7 @@
       <bindings>
         <select itemPath="" produces="XML" >
           <urls>
-            <url>http://livescore.com/</url>
+            <url>http://livescore.com/soccer/{country}/</url>
           </urls>
           <inputs>
                 <key id="country" type="xs:string" paramType="path" required="true" />
