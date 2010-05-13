@@ -9,10 +9,6 @@
           <urls>
             <url>http://livescore.com/soccer/</url>
           </urls>
-          <inputs>
-          </inputs>
-          <execute>
-          </execute>
         </select>
       </bindings>
 </table>
