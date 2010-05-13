@@ -5,7 +5,7 @@
         <description>livescore parser</description>
     </meta>
       <bindings>
-        <select itemPath="" produces="XML" >
+        <select itemPath="" produces="HTML" >
           <urls>
             <url>http://livescore.com/soccer/{country}/</url>
           </urls>
