@@ -1,6 +1,7 @@
 /*
  * JavaScript file
  */
+window.onload = init();
 
 function init()
 {
