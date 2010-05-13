@@ -5,5 +5,5 @@ window.onload = init();
 
 function init()
 {
-	//	Add your code stpes here
+	alert("it works");
 }
