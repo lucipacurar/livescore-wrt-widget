@@ -12,15 +12,7 @@
 var datasource = <table></table>;
 var datalength = livedata.table.tr.length();
 y.log(datalength);
-for (var row in livedata.table.tr) {
-
-	if (row.length() == 1 && row.td.@["class"] == "title"){
-                var rowdata = row..*
-		datasource.table += <tr>{rowdata}</tr>;
-	}
-}
-    
-                response.object = datasource;
+              response.object = livedata;
       ]]></execute>
       </select>
       </bindings>
