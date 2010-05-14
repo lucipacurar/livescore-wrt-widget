@@ -12,7 +12,7 @@
                 var datasource = <games></games>;
                 datasource.games = 'test';
                 y.log(datasource);
-                response.object = livedata;
+                response.object = datasource;
       ]]></execute>
       </select>
       </bindings>
