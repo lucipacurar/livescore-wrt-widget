@@ -7,6 +7,9 @@
       <bindings>
         <select produces="XML" >
           <execute>
-          </element>
+          	content = y.rest("http://livescores.com/").accept("text/html").get().response,path = '/html/body/table/tr[4]/td/table/tr/td[5]/table',datasource = y.xpath(continut,path);
+			var trimed = <firstresult>{datasource}</firstresult>;
+			response.object = trimed;
+		  </execute>
       </bindings>
 </table>
