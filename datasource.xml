@@ -9,7 +9,7 @@
           <execute>
           	content = y.rest("http://livescores.com/").accept("text/html").get().response,path = '/html/body/table/tr[4]/td/table/tr/td[5]/table',datasource = y.xpath(content,path);
 			var trimed = <postresult>{datasource}</postresult>;
-			response.object = trimed;
+			response.object = content;
 		  </execute>
       </bindings>
 </table>
