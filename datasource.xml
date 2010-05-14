@@ -9,7 +9,14 @@
           <execute>
           	var x = y.rest("http://livescores.com").accept("text/html").get().response;
                 var livedata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
-                response.object = livedata;
+                var datasource = <table></table>;
+for (var row in livedata.table.tr) {
+	if (row.length() == 1 && row.td.@["class"] == "title"){
+		datasource.table += <tr></tr>;
+		datasource.table.tr = row..*;
+	}
+}
+                response.object = datasource;
 	</execute>
       </select>
       </bindings>
