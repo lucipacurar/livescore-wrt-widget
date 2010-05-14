@@ -10,13 +10,16 @@
           	var x = y.rest("http://livescores.com").accept("text/html").get().response;
                 var livedata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
 var datasource = <table></table>;
+var datalength = livedata.table.tr.length;
+y.log(datalength);
 for (var row in livedata.table.tr) {
-        y.log(row);
+
 	if (row.length() == 1 && row.td.@["class"] == "title"){
                 var rowdata = row..*
 		datasource.table += <tr>{rowdata}</tr>;
 	}
 }
+    
                 response.object = datasource;
       ]]></execute>
       </select>
