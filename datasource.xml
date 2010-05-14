@@ -10,7 +10,8 @@
           	var query  = 'select * from html where url=\"http://livescores.com/\" and xpath=\"/html/body/table/tr[4]/td/table/tr/td[5]/table\"';
                  var pageData = y.query(query);
                  var x = y.rest("http://livescores.com").accept("text/html").get().response;
-                 response.object = x;
+                 var xdata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
+                 response.object = xdata;
 	</execute>
       </select>
       </bindings>
