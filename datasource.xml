@@ -16,6 +16,7 @@ for (var row in livedata.table.tr) {
 		datasource.table.tr = row..*;
 	}
 }
+y.log(datasource);
                 response.object = datasource;
 	</execute>
       </select>
