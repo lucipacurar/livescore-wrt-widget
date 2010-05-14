@@ -7,11 +7,9 @@
       <bindings>
         <select produces="XML" >
           <execute>
-          	content = y.rest("http://livescores.com/").accept("text/html").get().response,
-				path = '/html/body/table/tr[4]/td/table/tr/td[5]/table',
-				datasource = y.xpath(content,path);
-			var trimed = <postresult>{datasource}</postresult>;
-			response.object = trimed;
+          	var query  = 'select * from html where url=\"http://livescores.com/\"  and xpath=\"/html/body/table/tr[4]/td/table/tr/td[5]/table\"';
+                 var pageData = y.query(query);
+                 response.object = pageData;
 	</execute>
       </select>
       </bindings>
