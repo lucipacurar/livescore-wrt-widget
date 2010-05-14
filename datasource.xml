@@ -11,7 +11,7 @@
                 var livedata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
                 var datasource = <games></games>;
                 datasource.title = 'test';
-                datasource += <title>test2</title>;
+                datasource.games += <title>test2</title>;
                 y.log(datasource);
                 response.object = datasource;
       ]]></execute>
