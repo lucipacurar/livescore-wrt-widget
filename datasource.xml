@@ -9,8 +9,8 @@
           <execute>
           	var query  = 'select * from html where url=\"http://livescores.com/\" and xpath=\"/html/body/table/tr[4]/td/table/tr/td[5]/table\"';
                  var pageData = y.query(query);
-                 y.log(postResult);
-                 response.object = pageData.tidy();
+                 var responseData = pageData.tidy();
+                 response.object = <postresult>responseData</postresult>;
 	</execute>
       </select>
       </bindings>
