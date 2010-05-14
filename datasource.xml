@@ -7,8 +7,11 @@
       <bindings>
         <select itemPath="" produces="XML" >
           <urls>
-            <url>http://livescore.com/soccer/</url>
+            <url>@url</url>
           </urls>
         </select>
+       <inputs>
+       <key id="url" type="xs:string" paramType="variable" required="true"/>
+       </inputs>
       </bindings>
 </table>
