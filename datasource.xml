@@ -10,7 +10,8 @@
           	var x = y.rest("http://livescores.com").accept("text/html").get().response;
                 var livedata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
                 var datasource = <games></games>;
-                datasource += 'test';
+                datasource.games = <title></title>;
+                datasource.games.title += 'test';
                 y.log(datasource);
                 response.object = datasource;
       ]]></execute>
