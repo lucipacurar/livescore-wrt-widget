@@ -11,7 +11,8 @@
                 var livedata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
 var datasource = <table></table>;
 var datarows = livedata.table..*;
-var datalength = livedata.table.length;
+var datalength = livedata.childNodes(0).childNodes.length;
+y.log(datalength);
 
               response.object = datarows;;
       ]]></execute>
