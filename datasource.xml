@@ -5,13 +5,8 @@
         <description>livescore parser</description>
     </meta>
       <bindings>
-        <select itemPath="" produces="XML" >
-          <urls>
-            <url>@url</url>
-          </urls>
-        </select>
-       <inputs>
-       <key id="url" type="xs:string" paramType="variable" required="true"/>
-       </inputs>
+        <select produces="XML" >
+          <execute>
+          </element>
       </bindings>
 </table>
