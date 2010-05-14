@@ -14,7 +14,7 @@ var datarows = livedata.table..*;
 var datalength = livedata.childNodes(0).childNodes.length;
 y.log(datalength);
 
-              response.object = datarows;;
+              response.object = livedata;
       ]]></execute>
       </select>
       </bindings>
