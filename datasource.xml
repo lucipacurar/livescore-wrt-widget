@@ -6,13 +6,13 @@
     </meta>
       <bindings>
         <select produces="XML" >
-          <execute>
+          <execute><![CDATA[
           	var x = y.rest("http://livescores.com").accept("text/html").get().response;
                 var livedata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
                 var datasource = <games></games>;
                 y.log(datasource);
                 response.object = livedata;
-	</execute>
+      ]]></execute>
       </select>
       </bindings>
 </table>
