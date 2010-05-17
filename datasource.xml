@@ -11,12 +11,12 @@
                 var livedata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
                 var output = <rows></rows>;
 for each (row in livedata.tr){
-	if (row.td.*.length() != 0) {
+	if (row.td[0].*.length() != 0) {
 		output += <row>{row.*}</row>;
 	}
 }
 y.log(livedata.tr[2].td[0].*.length());
-response.object = livedata;
+response.object = output;
           
       ]]></execute>
       </select>
