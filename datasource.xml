@@ -16,7 +16,7 @@ for each (row in livedata.tr){
 	}
 }
 y.log(livedata.tr[0].td[0].length());
-response.object = output;
+response.object = livedata;
           
       ]]></execute>
       </select>
