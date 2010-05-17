@@ -9,7 +9,9 @@
           <execute><![CDATA[
           	var x = y.rest("http://livescores.com").accept("text/html").get().response;
                 var livedata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
-                y.log(livedata.*);
+          for each (entry in livedata.tr){
+             y.log(livedata.tr.td);
+          }
                 response.object = livedata;
       ]]></execute>
       </select>
