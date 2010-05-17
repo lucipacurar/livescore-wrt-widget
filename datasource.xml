@@ -9,7 +9,7 @@
           <execute><![CDATA[
           	var x = y.rest("http://livescores.com").accept("text/html").get().response;
                 var livedata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
-                y.log(livedata.tr[0].td[0]);
+                y.log(livedata.tr[2].td);
 response.object = livedata;
           
       ]]></execute>
