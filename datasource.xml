@@ -9,13 +9,14 @@
           <execute><![CDATA[
           	var x = y.rest("http://livescores.com").accept("text/html").get().response;
                 var livedata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
-                var dump = <rows></rows>
-        for each (row in livedata.tr){
-              var rowdata = row.td.*;
-              dump +=<row>{rowdata}</row>
-        }
-                y.log(dump);
-response.object = livedata;
+                var output = <rows></rows>
+for each (row in livedata.tr){
+	if (row.td.length() != 0) {
+		output += <row>{row}</row>;
+	}
+}
+y.log(output.length());
+response.object = output;
           
       ]]></execute>
       </select>
