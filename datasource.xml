@@ -9,12 +9,8 @@
           <execute><![CDATA[
           	var x = y.rest("http://livescores.com").accept("text/html").get().response;
                 var livedata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
-var datasource = <table></table>;
-var datarows = livedata.table..*;
-var datalength = livedata.childNodes(0).childNodes.length;
-y.log(datalength);
-
-              response.object = livedata;
+                y.log(livedata.table.*);
+                response.object = livedata;
       ]]></execute>
       </select>
       </bindings>
