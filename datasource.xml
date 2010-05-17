@@ -12,7 +12,7 @@
                 var output = <rows></rows>
 for each (row in livedata.tr){
 	if (row.td.length() != 0) {
-		output += <row>{row}</row>;
+		output += <row>{row.*}</row>;
 	}
 }
 y.log(output);
