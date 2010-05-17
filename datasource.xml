@@ -15,7 +15,7 @@ for each (row in livedata.tr){
 		output += <row>{row}</row>;
 	}
 }
-y.log(output.length());
+y.log(output);
 response.object = output;
           
       ]]></execute>
