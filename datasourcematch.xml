@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
+    <meta>
+        <author>Lucian Pacurar lucassp@gmail.com</author>
+        <description>livescore parser</description>
+    </meta>
+      <bindings>
+        <select produces="XML" >
+          <inputs>
+               <key id='matchurl' type='xs:string' paramType='variable' required="false" />
+          </inputs>
+          <execute><![CDATA[
+          	var x = y.rest(matchurl).accept("text/html").get().response;
+                var livedata = y.xpath(x, "/html/body/table");
+                var output = new XML();
+                for each (row in livedata.tr){
+	           if (row.td[0].*.length() != 0) {
+		       output += <tr>{row.*}</tr>;
+	           }
+                }
+               response.object =<table>{output}</table>;
+      ]]></execute>
+      </select>
+      </bindings>
+</table>
