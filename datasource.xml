@@ -6,8 +6,11 @@
     </meta>
       <bindings>
         <select produces="XML" >
+          <inputs>
+               <key id='country' type='xs:string' paramType='variable' required="false" />
+          </inputs>
           <execute><![CDATA[
-          	var x = y.rest("http://livescores.com").accept("text/html").get().response;
+          	var x = y.rest("http://livescores.com/soccer/@country").accept("text/html").get().response;
                 var livedata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
                 var output = new XML();
                 for each (row in livedata.tr){
