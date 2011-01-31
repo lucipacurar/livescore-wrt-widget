@@ -13,18 +13,18 @@
           	var x = y.rest("http://livescore.com/soccer/"+country).accept("text/html").get().response;
                 var livedata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
                 var output = new XML();
-                var newoutput = new XML();
+                var newOutput = new XML();
                 for each (row in livedata.tr){
 	           if (row.td[0].*.length() != 0) {
                        if (row.@bgcolor == '#333333' && row.td[0].@colspan == '4') {
+                          var newSection = <section></section>;
                           var title = row.td[0].p.*[1].toString() + row.td[0].p.*[2].toString();
-                          y.log(title);
+                          newSection.section.title = title;
+                          y.log(newSection);
                        }
                        if (row.@bgcolor == '#333333' && row.td.length() == 2){
-                          var time = row.td[0].p.*[1].toString();
-                          var date = row.td[1].p.*[0].toString();
-                          y.log(time);
-                          y.log(date);
+                          var time = row.td[0].p.*;
+                          var date = row.td[1].p.*;
                        }
 		       output += <tr>{row.*}</tr>;
 	           }
