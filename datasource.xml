@@ -20,7 +20,8 @@
                           var titleStart = 8 + row.td[0].p.*.toString().indexOf("<strong>");
                           var titleEnd = row.td[0].p.*.toString().indexOf("</strong>");
                           var titleLength = titleEnd - titleStart;
-                          y.log(row.td[0].p.*.toString().substr(titleStart, titleLength));
+                          var country = row.td[0].p.*.toString().substr(titleStart, titleLength);
+                          y.log(row.td[0].p.*);
 }
 		       output += <tr>{row.*}</tr>;
 	           }
