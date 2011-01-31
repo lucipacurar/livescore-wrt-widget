@@ -21,8 +21,8 @@
                           y.log(title);
                        }
                        if (row.@bgcolor == '#333333' && row.td.length() == 2){
-                          var time = row.td[0].p.*.toString();
-                          var date = row.td[1].p.*.toString();
+                          var time = row.td[0].p.*[1].toString();
+                          var date = row.td[1].p.*[0].toString();
                           y.log(time);
                           y.log(date);
                        }
