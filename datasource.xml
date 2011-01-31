@@ -20,7 +20,7 @@
                           var title = row.td[0].p.*[1].toString() + row.td[0].p.*[2].toString();
                           y.log(title);
                        }
-                       if (row.@bgcolor == '#333333' && row.td.*.length == 2){
+                       if (row.@bgcolor == '#333333' && row.td.*.length() == 2){
                           y.log(row.td.*);
                        }
 		       output += <tr>{row.*}</tr>;
