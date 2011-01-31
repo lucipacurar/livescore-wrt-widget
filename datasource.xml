@@ -17,11 +17,11 @@
                 for each (row in livedata.tr){
 	           if (row.td[0].*.length() != 0) {
                           if (row.td[0].@colspan == '4') {
-                          var titleStart = 8 + row.td[0].p.*.toString().indexOf("<strong>");
-                          var titleEnd = row.td[0].p.*.toString().indexOf("</strong>");
-                          var titleLength = titleEnd - titleStart;
-                          var country = row.td[0].p.*.toString().substr(titleStart, titleLength);
-                          y.log(row.td[0].p.*);
+                          var countryStart = 8 + row.td[0].p.*.toString().indexOf("<strong>");
+                          var countryEnd = row.td[0].p.*.toString().indexOf("</strong>");
+                          var countryLength = countryEnd - countryStart;
+                          var country = row.td[0].p.*.toString().substr(countryStart, countryLength);
+                          y.log(row.td[0].p.*.toString().length());
 }
 		       output += <tr>{row.*}</tr>;
 	           }
