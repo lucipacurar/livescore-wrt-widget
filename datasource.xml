@@ -17,7 +17,7 @@
                 for each (row in livedata.tr){
 	           if (row.td[0].*.length() != 0) {
                           if (row.td[0].@colspan == '4') {
-                          y.log(row.td[0].p.indexOf("<strong>"));
+                          y.log(row.td[0].p.*.toString().indexOf("<strong>"));
 }
 		       output += <tr>{row.*}</tr>;
 	           }
