@@ -21,7 +21,7 @@
                           var countryEnd = row.td[0].p.*.toString().indexOf("</strong>");
                           var countryLength = countryEnd - countryStart;
                           var country = row.td[0].p.*[1].toString();
-                          y.log();
+                          y.log(row.td[0].p.*[2].toString(););
 }
 		       output += <tr>{row.*}</tr>;
 	           }
