@@ -13,11 +13,13 @@
           	var x = y.rest("http://livescore.com/soccer/"+country).accept("text/html").get().response;
                 var livedata = y.xpath(x, "/html/body/table/tr[4]/td/table/tr/td[5]/table");
                 var output = new XML();
+                var newoutput = new XML();
                 for each (row in livedata.tr){
 	           if (row.td[0].*.length() != 0) {
-                          y.log(row.td[0].@colspan);
+                          if (row.td[0].@colspan == '4') {
+                          y.log(row.td[0].p);
+}
 		       output += <tr>{row.*}</tr>;
-y.log(row.td.length());
 	           }
                 }
                response.object =<table>{output}</table>;
