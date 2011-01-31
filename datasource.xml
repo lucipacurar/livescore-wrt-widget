@@ -31,9 +31,8 @@
                           var matchDay = <matchday></matchday>;
                           var time = row.td[0].p.*;
                           var date = row.td[1].p.*;
-                          matchDay.time = time.toXMLString();
-                          matchDay.date = date.toXMLString();
-                          y.log(.toXMLString());
+                          matchDay.matchday.time = time;
+                          matchDay.matchday.date = date;
                        }
 		       output += <tr>{row.*}</tr>;
 	           }
