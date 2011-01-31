@@ -24,7 +24,7 @@
                           var time = row.td[0].p.*;
                           //var date = row.td[1].p.*;
                           y.log(time);
-                          y.log(date);
+                          //y.log(date);
                        }
 		       output += <tr>{row.*}</tr>;
 	           }
