@@ -26,7 +26,7 @@
                        }
                        if (row.@bgcolor == '#333333' && row.td.length() == 2){
                           if (matchDay) {
-                             newSection.matchdays += <matchday>1123123</matchday>>;
+                             newSection.matchdays += <matchday>112312</matchday>;
                           }
                           var matchDay = <matchday></matchday>;
                           var time = row.td[0].p.*;
