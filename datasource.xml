@@ -23,7 +23,6 @@
                           var newSection = <section></section>;
                           var title = row.td[0].p.*[1].toString() + row.td[0].p.*[2].toString();
                           newSection.section.title = title;
-                          y.log(newSection);
                        }
                        if (row.@bgcolor == '#333333' && row.td.length() == 2){
                           if (matchDay) {
