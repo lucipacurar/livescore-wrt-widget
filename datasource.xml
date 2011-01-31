@@ -31,8 +31,8 @@
                           var matchDay = <matchday></matchday>;
                           var time = row.td[0].p.*;
                           var date = row.td[1].p.*;
-                          matchDay.matchday.time = time;
-                          matchDay.matchday.date = date;
+                          matchDay.matchday.localTime = time;
+                          matchDay.matchday.matchDayDate = date;
                        }
 		       output += <tr>{row.*}</tr>;
 	           }
