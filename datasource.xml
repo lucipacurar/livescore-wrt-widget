@@ -23,7 +23,7 @@
                        if (row.@bgcolor == '#333333' && row.td.length() == 2){
                           var time = row.td[0].p.*;
                           //var date = row.td[1].p.*;
-                          y.log(time);
+                          y.log(time.length());
                           //y.log(date);
                        }
 		       output += <tr>{row.*}</tr>;
