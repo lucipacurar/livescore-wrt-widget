@@ -26,13 +26,13 @@
                        }
                        if (row.@bgcolor == '#333333' && row.td.length() == 2){
                           if (matchDay) {
-                             newSection.section.matchdays += matchDay;
+                             newSection.matchdays += matchDay;
                           }
                           var matchDay = <matchday></matchday>;
                           var time = row.td[0].p.*;
                           var date = row.td[1].p.*;
-                          matchDay.matchday.time = time;
-                          matchDay.matchday.date = date;
+                          matchDay.time = time;
+                          matchDay.date = date;
                        }
 		       output += <tr>{row.*}</tr>;
 	           }
