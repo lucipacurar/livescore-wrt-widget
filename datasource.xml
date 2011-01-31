@@ -17,25 +17,28 @@
                 for each (row in livedata.tr){
 	           if (row.td[0].*.length() != 0) {
                        if (row.@bgcolor == '#333333' && row.td[0].@colspan == '4') {
+                          if (newSection) {
+                             newOutput += newSection;
+                          }
                           var newSection = <section></section>;
                           var title = row.td[0].p.*[1].toString() + row.td[0].p.*[2].toString();
                           newSection.section.title = title;
                           y.log(newSection);
                        }
                        if (row.@bgcolor == '#333333' && row.td.length() == 2){
-                          if (matchdays) {
-                             newSection.section.matchdays += matchdays;
-                          } else {
-                             var matchdays = <matchdays></matchdays>;
+                          if (matchDay) {
+                             newSection.section.matchdays += matchDay;
                           }
+                          var matchDay = <matchday></matchday>;
                           var time = row.td[0].p.*;
                           var date = row.td[1].p.*;
-                          newSection.section.time = time;
-                          newSection.section.date = date;
+                          matchDay.matchday.time = time;
+                          matchDay.matchday.date = date;
                        }
 		       output += <tr>{row.*}</tr>;
 	           }
                 }
+               y.log(newSection);
                response.object =<table>{output}</table>;
       ]]></execute>
       </select>
