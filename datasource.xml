@@ -23,11 +23,11 @@
                           var newSection = <section></section>;
                           var title = row.td[0].p.*[1].toString() + row.td[0].p.*[2].toString();
                           newSection.title = title;
+                          newSection.matchdays = <matchdays></matchdays>;
                        }
                        if (row.@bgcolor == '#333333' && row.td.length() == 2){
                           if (matchDay) {
-                             newSection.section += <matchdays></matchdays>;
-                             newSection.section.matchdays += <matchday>112312</matchday>;
+                             y.log(newSection)
                           }
                           var matchDay = <matchday></matchday>;
                           var time = row.td[0].p.*;
