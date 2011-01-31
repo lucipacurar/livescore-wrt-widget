@@ -17,7 +17,7 @@
                 for each (row in livedata.tr){
 	           if (row.td[0].*.length() != 0) {
                           if (row.td[0].@colspan == '4') {
-                          var title = row.td[0].p.*[1].toString() + row.td[0].p.*[2].toString();
+                          var title = row.td[0].p.*[1] + row.td[0].p.*[2];
                           y.log(title);
 }
 		       output += <tr>{row.*}</tr>;
