@@ -17,7 +17,10 @@
                 for each (row in livedata.tr){
 	           if (row.td[0].*.length() != 0) {
                           if (row.td[0].@colspan == '4') {
-                          y.log(row.td[0].p.*.toString().indexOf("<strong>"));
+                          var titleStart = 7 + row.td[0].p.*.toString().indexOf("<strong>");
+                          var titleEnd = row.td[0].p.*.toString().indexOf("</strong>");
+                          var titleLength = titleEnd - titleStart;
+                          y.log(row.td[0].p.*.toString().substr(titleStart, titleLength));
 }
 		       output += <tr>{row.*}</tr>;
 	           }
