@@ -33,7 +33,7 @@
                           var date = row.td[1].p.*;
                           matchDay.time = time;
                           matchDay.date = date;
-                          y.log(matchDay.time);
+                          y.log(matchDay.date);
                        }
 		       output += <tr>{row.*}</tr>;
 	           }
