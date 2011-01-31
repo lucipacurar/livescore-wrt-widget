@@ -38,8 +38,7 @@
 		       output += <tr>{row.*}</tr>;
 	           }
                 }
-               y.log(newSection);
-               response.object =<table>{output}</table>;
+               response.object = newOutput;
       ]]></execute>
       </select>
       </bindings>
