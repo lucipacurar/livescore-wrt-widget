@@ -37,7 +37,7 @@
 		       output += <tr>{row.*}</tr>;
 	           }
                 }
-               response.object = newOutput;
+               response.object = {newOutput};
       ]]></execute>
       </select>
       </bindings>
