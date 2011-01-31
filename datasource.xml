@@ -15,9 +15,7 @@
                 var output = new XML();
                 for each (row in livedata.tr){
 	           if (row.td[0].*.length() != 0) {
-                       if (row.td.@class == 'title') {
-                          y.log(row.td[0].@class);
-}
+                          y.log(row.td[0]);
 		       output += <tr>{row.*}</tr>;
 y.log(row.td.length());
 	           }
