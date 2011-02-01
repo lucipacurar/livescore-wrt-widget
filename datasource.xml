@@ -16,7 +16,7 @@
                 var newOutput = new XML();
                 for each (row in livedata.tr){
 	           if (row.td[0].*.length() != 0) {
-		       output += <tr>{row.*}</tr>;
+		       output += {row};
 	           }
                 }
                 y.log(output);
