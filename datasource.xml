@@ -39,7 +39,7 @@
                           matchDay.date =<date>{date}</date>;
                       }
                       if (output[i].@bgcolor == '#CFCFCF' || output[i].@bgcolor == '#CFCFCF') {
-                         var matchTime = output[i].td[0].p;
+                         var matchTime = <matchtime>{output[i].td[0].p}</matchtime>;
                          var firstTeam = output[i].td[1].p.*;
                          var secondTeam = output[i].td[3].p.*;
                          if (output[i].td[2].p.length() == 1) {
@@ -47,8 +47,9 @@
                          } else {
                             var score = output[i].td[2].a.*;
                          }
+                         y.log(matchTime);
                          var match = XML();
-                         match.appendChild("<matchtime>{matchTime}</matchtime>");
+                         match.appendChild(matchTime);
                          y.log(match);
                       }
                       if (output.length() == i + 1) {
