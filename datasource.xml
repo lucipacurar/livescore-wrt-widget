@@ -39,6 +39,9 @@
                           matchDay.time =<time>{time}</time>;
                           matchDay.date =<date>{date}</date>;
                       }
+                      if (output.length() == i + 1) {
+                         newOutput += newSection;
+                      }
                 }
                response.object = <output>{newOutput}</output>;
       ]]></execute>
