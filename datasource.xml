@@ -45,7 +45,7 @@
                          if (output[i].td[2].p.length() == 1) {
                             var score = <score>{output[i].td[2].p.*}</score>;
                          } else {
-                            var score = <score>{output[i].td[2].a.*}</score>;
+                            var score = <score>{output[i].td[2].a.*.toString()}</score>;
                          }
                          var match = <match></match>;
                          match.appendChild(matchTime);
