@@ -47,6 +47,9 @@
                          } else {
                             var score = output[i].td[2].a.*;
                          }
+                         var match = XML();
+                         match.appendChild("<matchtime>"+matchTime+"</matchtime>");
+                         y.log(match);
                       }
                       if (output.length() == i + 1) {
                          newOutput += newSection;
