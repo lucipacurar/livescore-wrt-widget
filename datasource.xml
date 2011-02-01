@@ -38,7 +38,7 @@
                           matchDay.time =<time>{time}</time>;
                           matchDay.date =<date>{date}</date>;
                       }
-                      if (output[i].@bgcolor == '#CFCFCF' || output[i].@bgcolor == '#CFCFCF') {
+                      if (output[i].@bgcolor == '#CFCFCF' || output[i].@bgcolor == '#DFDFDF') {
                          var matchTime = <matchtime>{output[i].td[0].p.*}</matchtime>;
                          var firstTeam = <firstteam>{output[i].td[1].p.*}</firstteam>;
                          var secondTeam = <secondteam>{output[i].td[3].p.*}</secondteam>;
