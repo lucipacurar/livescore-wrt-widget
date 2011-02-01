@@ -42,7 +42,7 @@
                          y.log(output[i].td[0].p);
                          y.log(output[i].td[1].p.*);
                          y.log(output[i].td[2].p);
-                         y.log(output[i].td[2].p.a);
+                         y.log(output[i].td[2].a);
                          y.log(output[i].td[3].p.*);
                       }
                       if (output.length() == i + 1) {
