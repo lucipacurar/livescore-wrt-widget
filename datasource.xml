@@ -47,16 +47,18 @@
                          } else {
                             var score = <score>{output[i].td[2].a.*}</score>;
                          }
-                         y.log(matchTime);
                          var match = <match></match>;
                          match.appendChild(matchTime);
-                         y.log(match);
+                         match.appendChild(firstTeam);
+                         match.appendChild(secondTeam);
+                         match.appendChild(score);
+                         matchDay.appendChild(match);
                       }
                       if (output.length() == i + 1) {
                          newOutput += newSection;
                       }
                 }
-               response.object = <output>{output}</output>;
+               response.object = <output>{newOutput}</output>;
       ]]></execute>
       </select>
       </bindings>
