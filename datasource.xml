@@ -49,7 +49,7 @@
                          }
                          y.log(matchTime);
                          var match = XML();
-                         match.appendChild(matchTime);
+                         match.matchtime.appendChild(matchTime);
                          y.log(match);
                       }
                       if (output.length() == i + 1) {
