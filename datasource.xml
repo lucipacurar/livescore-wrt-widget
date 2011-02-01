@@ -22,7 +22,7 @@
                 for (var i=0; i < output.length(); i++) {
                       if (output[i].@bgcolor == '#333333' && output[i].td[0].@colspan == '4') {
                           if (newSection) {
-                             newOutput.appendChild(newSection);
+                             newOutput += newSection;
                           }
                           var newSection = <section></section>;
                           var title = output[i].td[0].p.*[1].toString() + output[i].td[0].p.*[2].toString();
@@ -30,7 +30,7 @@
                       }
                       if (output[i].@bgcolor == '#333333' && output[i].td.length() == 2){
                           if (matchDay) {
-                             newSection.appendChild(matchDay);
+                             newSection.matchday += matchDay;
                           }
                           var matchDay = <matchday></matchday>;
                           var time = output[i].td[0].p.*;
