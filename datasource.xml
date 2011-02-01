@@ -35,6 +35,7 @@
                           matchDay.date =<date>{date}</date>;
                        }
 		       output += <tr>{row.*}</tr>;
+                       y.log(row[i]);
 	           }
                 }
                response.object = <output>{newOutput}</output>;
