@@ -48,8 +48,8 @@
                             var score = output[i].td[2].a.*;
                          }
                          y.log(matchTime);
-                         var match = XML();
-                         match.matchtime.appendChild(matchTime);
+                         var match = <match></match>;
+                         match.appendChild(matchTime);
                          y.log(match);
                       }
                       if (output.length() == i + 1) {
