@@ -52,6 +52,7 @@
                          match.appendChild(firstTeam);
                          match.appendChild(secondTeam);
                          match.appendChild(score);
+                         y.log(match);
                          matchDay.appendChild(match);
                       }
                       if (output.length() == i + 1) {
