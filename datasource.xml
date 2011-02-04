@@ -35,7 +35,6 @@
                           newOutput += matchDay;
                       }
                       if (output[i].@bgcolor == '#CFCFCF' || output[i].@bgcolor == '#DFDFDF') {
-                         y.log(output[i].td[0].p.*.length());
                          if (output[i].td[0].p.*.length() == 3) {
                              var matchTime = <matchtime>{output[i].td[0].p.*[2]}</matchtime>;
                          } else {
