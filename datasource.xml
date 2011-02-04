@@ -29,7 +29,7 @@
                       if (output[i].@bgcolor == '#333333' && output[i].td.length() == 2){
                           var matchDay = <matchday></matchday>;
                           var time = output[i].td[0].p.*.toString();
-                          var date = output[i].td[1].p.*;
+                          var date = output[i].td[1].p.*.toString();
                           matchDay.time =<time>{time}</time>;
                           matchDay.date =<date>{date}</date>;
                           newOutput += matchDay;
