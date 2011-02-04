@@ -21,22 +21,18 @@
                 }
                 for (var i=0; i < output.length(); i++) {
                       if (output[i].@bgcolor == '#333333' && output[i].td[0].@colspan == '4') {
-                          if (newSection) {
-                             newOutput += newSection;
-                          }
                           var newSection = <section></section>;
                           var title = output[i].td[0].p.*[1].toString() + output[i].td[0].p.*[2].toString();
                           newSection.title = title;
+                          newOutput += newSection;
                       }
                       if (output[i].@bgcolor == '#333333' && output[i].td.length() == 2){
-                          if (matchDay) {
-                             newSection.matchday += matchDay;
-                          }
                           var matchDay = <matchday></matchday>;
                           var time = output[i].td[0].p.*;
                           var date = output[i].td[1].p.*;
                           matchDay.time =<time>{time}</time>;
                           matchDay.date =<date>{date}</date>;
+                          newOutput += matchDay;
                       }
                       if (output[i].@bgcolor == '#CFCFCF' || output[i].@bgcolor == '#DFDFDF') {
                          var matchTime = <matchtime>{output[i].td[0].p.*}</matchtime>;
@@ -52,11 +48,7 @@
                          match.appendChild(firstTeam);
                          match.appendChild(secondTeam);
                          match.appendChild(score);
-                         y.log(match);
-                         matchDay.match += match;
-                      }
-                      if (output.length() == i + 1) {
-                         newOutput += newSection;
+                         newOutput += match;
                       }
                 }
                response.object = <output>{newOutput}</output>;
