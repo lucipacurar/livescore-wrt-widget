@@ -28,12 +28,11 @@
                       }
                       if (output[i].@bgcolor == '#333333' && output[i].td.length() == 2){
                           var matchDay = <matchday></matchday>;
-                          var time = output[i].td[0].p.*.toString().split(";")[1];
+                          var time = output[i].td[0].p.*.toString();
                           var date = output[i].td[1].p.*.toString();
                           matchDay.time =<localtime>{time}</localtime>;
                           matchDay.date =<date>{date}</date>;
                           newOutput += matchDay;
-                          y.log(output[i].td[0].p.*.toString().split("p")[0]);
                       }
                       if (output[i].@bgcolor == '#CFCFCF' || output[i].@bgcolor == '#DFDFDF') {
                          var matchTime = <matchtime>{output[i].td[0].p.*}</matchtime>;
