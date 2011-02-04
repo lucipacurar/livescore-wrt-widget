@@ -33,6 +33,7 @@
                           matchDay.time =<localtime>{time}</localtime>;
                           matchDay.date =<date>{date}</date>;
                           newOutput += matchDay;
+                          y.log(output[i].td[0].p.*.toString().split(";")[0]);
                       }
                       if (output[i].@bgcolor == '#CFCFCF' || output[i].@bgcolor == '#DFDFDF') {
                          var matchTime = <matchtime>{output[i].td[0].p.*}</matchtime>;
