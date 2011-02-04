@@ -35,7 +35,10 @@
                           newOutput += matchDay;
                       }
                       if (output[i].@bgcolor == '#CFCFCF' || output[i].@bgcolor == '#DFDFDF') {
-                         y.log(output[i].td[0].p.*);
+                         y.log(output[i].td[0].p.*.length());
+                         if (output[i].td[0].p.*.length() == 1) {
+                             
+                         }
                          var matchTime = <matchtime>{output[i].td[0].p.*}</matchtime>;
                          var firstTeam = <firstteam>{output[i].td[1].p.*}</firstteam>;
                          var secondTeam = <secondteam>{output[i].td[3].p.*}</secondteam>;
