@@ -20,7 +20,7 @@
 	           }
                 }
                 for (var i=0; i < output.length(); i++) {
-                      if (output[i].@bgcolor == '#333333' && output[i].td[0].class == 'title') {
+                      if (output[i].@bgcolor == '#333333' && output[i].td[0].@className == 'title') {
                           if (newSection) {
                               newOutput += newSection;
                           }
