@@ -62,6 +62,8 @@
                          //newOutput += match;
                       }
                 }
+newSection.appendChild(matchDay);
+                              newOutput += newSection;
                response.object = <output>{newOutput}</output>;
       ]]></execute>
       </select>
