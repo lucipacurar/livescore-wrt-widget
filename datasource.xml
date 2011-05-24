@@ -53,7 +53,7 @@
                          match.appendChild(firstTeam);
                          match.appendChild(secondTeam);
                          match.appendChild(score);
-                         matchday.appendChild(match);
+                         matchDay.appendChild(match);
                          newOutput += match;
                       }
                 }
