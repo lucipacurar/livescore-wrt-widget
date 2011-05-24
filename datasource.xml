@@ -32,7 +32,7 @@
                       }
                       if (output[i].@bgcolor == '#333333' && output[i].td.length() == 2){
                           if (matchDay) {
-                              newSection.appendChild(matchday);
+                              newSection.appendChild(matchDay);
                           }
                           var matchDay = <matchday></matchday>;
                           var time = output[i].td[0].p.*.toString();
