@@ -32,7 +32,6 @@
                           var date = output[i].td[1].p.*.toString();
                           matchDay.appendChild(<localtime>{time}</localtime>);
                           matchDay.appendChild(<date>{date}</date>);
-                          newSection.appendChild(matchDay);
                           newOutput += matchDay;
                       }
                       if (output[i].@bgcolor == '#CFCFCF' || output[i].@bgcolor == '#DFDFDF') {
@@ -54,6 +53,7 @@
                          match.appendChild(secondTeam);
                          match.appendChild(score);
                          matchDay.appendChild(match);
+                         newSection.appendChild(matchDay);
                          newOutput += match;
                       }
                 }
