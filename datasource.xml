@@ -28,7 +28,7 @@
                           var title = output[i].td[0].p.*[1].toString() + output[i].td[0].p.*[2].toString();
                           newSection.appendChild(<title>{title}</title>);
                       }
-                      if (output[i].@bgcolor == '#333333' && output[i].td[1].@colspan == '3'){
+                      if (output[i].@bgcolor == '#333333' && output[i].td.length() == 2){
                           if (matchDay) {
                               newSection.appendChild(matchDay);
                           }
