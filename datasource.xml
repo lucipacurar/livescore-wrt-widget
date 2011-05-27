@@ -48,7 +48,7 @@
                              var matchTime = <matchtime>{output[i].td[0].p.*[2].replace(/\u00a0/g,'')}</matchtime>;
                          } else {
                              var matchTime = output[i].td[0].p.*[0];
-                             y.log(matchTime);
+                             y.log(matchTime.replace(/\u00a0/g,''));
                              //matchTime = matchTime.replace(/\u00a0/g,'');
                              matchTime = <matchtime>{matchTime}</matchtime>;
                          }
