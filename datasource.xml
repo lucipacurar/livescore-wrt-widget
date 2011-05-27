@@ -58,7 +58,7 @@
                             score = score.split("-");
                             scoreleft = score[0].split(" ",1);
                             scoreleft = scoreleft[0];
-                            scoreright = score[2].split(" ",1);
+                            //scoreright = score[2].split(" ",1);
                             //score = scoreleft+"-"+score[1];
                             y.log(score[0]);
                             y.log(score[1]);
