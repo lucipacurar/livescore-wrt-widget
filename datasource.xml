@@ -60,7 +60,7 @@
                             scoreleft = scoreleft[0];
                             scoreright = score[1].split(" ",1);
                             score = scoreleft+"-"+score[1];
-                            y.log(score[1].split(" "));
+                            y.log(score[2].split(" "));
                             score = <score>{score}</score>;
                          }
                          var match = <match></match>;
