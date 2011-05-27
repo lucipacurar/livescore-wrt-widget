@@ -48,7 +48,7 @@
                              var matchTime = <matchtime>{output[i].td[0].p.*[2].replace(/\u00a0/g,'')}</matchtime>;
                          } else {
                              var matchTime = output[i].td[0].p.*;
-                             matchTime = matchTime..replace(/\u00a0/g,'');
+                             matchTime = matchTime.replace(/\u00a0/g,'');
                              matchTime = <matchtime>{matchTime}</matchtime>;
                          }
                          var firstTeam = <firstteam>{output[i].td[1].p.*}</firstteam>;
