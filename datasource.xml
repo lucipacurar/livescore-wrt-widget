@@ -48,7 +48,8 @@
                              var matchTime = <matchtime>{output[i].td[0].p.*[2].replace(/\u00a0/g,'')}</matchtime>;
                          } else {
                              var matchTime = output[i].td[0].p.*;
-                             matchTime = <matchtime>{matchTime.replace(/\u00a0/g,'')}</matchtime>;
+                             matchTime = matchTime..replace(/\u00a0/g,'');
+                             matchTime = <matchtime>{matchTime}</matchtime>;
                          }
                          var firstTeam = <firstteam>{output[i].td[1].p.*}</firstteam>;
                          var secondTeam = <secondteam>{output[i].td[3].p.*}</secondteam>;
@@ -60,7 +61,6 @@
                             scoreleft = score[0].split(" ",1);
                             scoreleft = scoreleft[0];
                             scoreright = score[1].split(" ")[1];
-                            y.log(scoreright);
                             score = scoreleft+"-"+scoreright;
                             score = <score>{score}</score>;
                          }
