@@ -37,7 +37,7 @@
                           }
                           var matchDay = <matchday></matchday>;
                           var time = output[i].td[0].p.*.toString().replace(/\u00a0/g,'');
-                          var date = output[i].td[1].p.*.toString();
+                          var date = output[i].td[1].p.*.toString().replace(/\u00a0/g,'');
                           matchDay.appendChild(<localtime>{time}</localtime>);
                           matchDay.appendChild(<date>{date}</date>);
                           matchDayAppended = false;
