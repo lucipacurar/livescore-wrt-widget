@@ -54,7 +54,7 @@
                          if (output[i].td[2].p.length() == 1) {
                             var score = <score>{output[i].td[2].p.*}</score>;
                          } else {
-                            var score = output[i].td[2].a.*.toString().replace(/(\r\n|\n|\r)/gm,"");
+                            var score = output[i].td[2].a.*.toString().replace(/(\r\n|\n|\r)/gm,"").replace(/^\s+|\s+$/g, '');
                             score = <score>{score}</score>;
                          }
                          var match = <match></match>;
