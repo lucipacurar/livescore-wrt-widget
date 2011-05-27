@@ -45,11 +45,9 @@
                       }
                       if (output[i].@bgcolor == '#CFCFCF' || output[i].@bgcolor == '#DFDFDF') {
                          if (output[i].td[0].p.*.length() == 3) {
-                             var matchTime = <matchtime>{output[i].td[0].p.*[2].replace(/\u00a0/g,'')}</matchtime>;
+                             var matchTime = <matchtime>{output[i].td[0].p.*[2].toString().replace(/\u00a0/g,'')}</matchtime>;
                          } else {
                              var matchTime = output[i].td[0].p.*.toString().replace(/\u00a0/g,'');
-                             //y.log(output[i].td[0].p.toString().replace(/\u00a0/g,''));
-                             //matchTime = matchTime.replace(/\u00a0/g,'');
                              matchTime = <matchtime>{matchTime}</matchtime>;
                          }
                          var firstTeam = <firstteam>{output[i].td[1].p.*}</firstteam>;
