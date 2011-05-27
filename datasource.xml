@@ -58,9 +58,9 @@
                             score = score.split("-");
                             scoreleft = score[0].split(" ",1);
                             scoreleft = scoreleft[0];
-                            scoreright = score[1].split(" ",1);
-                            //score = scoreleft+"-"+score[1];
-                            y.log(score);
+                            scoreright = score[2].split(" ",1);
+                            score = scoreleft+"-"+score[1];
+                            y.log(scoreright);
                             score = <score>{score}</score>;
                          }
                          var match = <match></match>;
