@@ -59,7 +59,7 @@
                             scoreleft = score[0].split(" ",1);
                             scoreleft = scoreleft[0];
                             scoreright = score[1].split(" ",1);
-                            scoreright = scoreright[1];
+                            scoreright = scoreright[0];
                             score = scoreleft+"-"+scoreright;
                             score = <score>{score}</score>;
                          }
