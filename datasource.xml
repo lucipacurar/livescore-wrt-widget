@@ -45,7 +45,7 @@
                       }
                       if (output[i].@bgcolor == '#CFCFCF' || output[i].@bgcolor == '#DFDFDF') {
                          if (output[i].td[0].p.*.length() == 3) {
-                             var matchTime = <matchtime>{output[i].td[0].p.*[2]}</matchtime>;
+                             var matchTime = <matchtime>{output[i].td[0].p.*[2].replace(/\u00a0/g,'')}</matchtime>;
                          } else {
                              var matchTime = <matchtime>{output[i].td[0].p.*}</matchtime>;
                          }
